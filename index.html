@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analog Clock</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="theme-toggle">
+    <button id="toogle-Button" onclick="toggleTheme()">Toggle Night Mode</button>
+  </div>
+
+  <div class="clock-settings">
+     <label for="clock-size" id="Head-Text">Analog and Digital Clock Online Tool</label>
+        <!-- <input type="range" id="clock-size" min="200" max="500" value="300" onchange="updateClockSize(this.value)"> -->
+
+    <label for="clock-color" id="Clock-Text">Clock Background Color:</label>
+    <input type="color" id="clock-color" value="#e6e6e6" onchange="updateClockColor(this.value)">
+
+    <label for="hand-color"  id="Clock-Text1">Clock Hands Color:</label>
+    <input type="color" id="hand-color" value="#333" onchange="updateHandColor(this.value)">
+  </div>
+
+  <div class="clock-container">
+    <div class="clock">
+      <div class="clock-face">
+        <!-- Clock hands -->
+        <div class="hand hour-hand"></div>
+        <div class="hand minute-hand"></div>
+        <div class="hand second-hand"></div>
+        <!-- Clock numbers -->
+        <div class="number" id="one">1</div>
+        <div class="number" id="two">2</div>
+        <div class="number" id="three">3</div>
+        <div class="number" id="four">4</div>
+        <div class="number" id="five">5</div>
+        <div class="number" id="six">6</div>
+        <div class="number" id="seven">7</div>
+        <div class="number" id="eight">8</div>
+        <div class="number" id="nine">9</div>
+        <div class="number" id="ten">10</div>
+        <div class="number" id="eleven">11</div>
+        <div class="number" id="twelve">12</div>
+        <div class="number" id="Circle-Text">⏺️</div>
+      </div>
+    </div>
+    <!-- Optional Digital Display -->
+    <div class="digital-clock" id="digital-clock"></div>
+    <div class="date-day" id="date-day"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

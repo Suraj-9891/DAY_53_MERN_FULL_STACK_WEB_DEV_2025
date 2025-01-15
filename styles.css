@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  .clock-settings {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .clock-settings label {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .clock-container {
+    position: relative;
+  }
+  
+  .clock {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #fff, #e6e6e6);
+    border: 10px solid #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #ff9900, 0 0 30px #ffff00, 
+    0 0 40px #00ff00, 0 0 50px #0000ff, 0 0 60px #9900cc
+    
+
+      
+    /* box-shadow: inset 0 0 10px rgba(52, 55, 231, 0.3) */
+  }
+  
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    transition-timing-function: steps(1);
+  }
+  
+  .hour-hand {
+    width: 8px;
+    height: 70px;
+    background-color: #333;
+    transform: translateX(-50%) rotate(90deg);
+  }
+  
+  .minute-hand {
+    width: 6px;
+    height: 100px;
+    background-color: #666;
+    transform: translateX(-50%) rotate(180deg);
+  }
+  
+  .second-hand {
+    width: 2px;
+    height: 120px;
+    background-color: red;
+    transform: translateX(-50%) rotate(270deg);
+  }
+  
+  .number {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #twelve { top: 10px; left: 135px; }
+  #one { top: 30px; left: 205px; }
+  #two { top: 80px; left: 240px; }
+  #three { top: 140px; left: 250px; }
+  #four { top: 195px; left: 235px; }
+  #five { top: 240px; left: 190px; }
+  #six { top: 250px; left: 135px; }
+  #seven { top: 225px; left: 85px; }
+  #eight { top: 190px; left: 45px; }
+  #nine { top: 138px; left: 20px; }
+  #ten { top: 75px; left: 23px; }
+  #eleven { top: 28px; left: 70px; }
+  #Circle-Text { top: px; left: 130px; }
+ 
+  
+
+  .digital-clock {
+    position: absolute;
+    top: 350px;
+    left: 70px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(213, 99, 18);
+    
+  }
+  
+  .date-day {
+    position: absolute;
+    top: 400px;
+    left: 60px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #333;
+    font-size: 25px;
+    color: rgb(13, 32, 154);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+  
+  @media screen and (max-width: 500px) {
+    .clock {
+      width: 200px;
+      height: 200px;
+    }
+    .digital-clock {
+      top: 250px;
+    }
+  }
+  
+  body.night-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  body.night-mode .clock {
+    background: radial-gradient(circle, #333, #444);
+    border: 10px solid #fff;
+  }
+  
+  body.night-mode .clock .hand {
+    background-color: #fff;
+  }
+  
+  body.night-mode .digital-clock {
+    color: #fff;
+  }
+  
+  body.night-mode .date-day {
+    color: #fff;
+  }
+
+
+  #toogle-Button{
+    background-color: rgb(8, 67, 52);
+    border-radius: 20px;
+  }
+  #toogle-Button:hover{
+    background-color: chocolate;
+  }
+
+
+
+  #Clock-Text{
+    font-size: 25px;
+    font-weight: bold;
+    color: #167c71;
+  }
+
+  #Clock-Text1{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(167, 54, 78);
+  }
+  #Head-Text{
+    margin-top: 20px;
+  }
+
+  #Head-Text{
+    margin-left:450px;
+    font-size: 40px;
+    color: #592ced;
+    margin-top: -20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
